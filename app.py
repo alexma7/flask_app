@@ -1,9 +1,9 @@
-from flask import Flask, request, render_template, jsonify
-from flask.wrappers import Response
-from py.prime import makePrime
-from galton import galtonboard
+from flask import Flask#, request, render_template, jsonify
+#from flask.wrappers import Response
+#from py.prime import makePrime
+#from galton import galtonboard
 import git # GitPython library
-import os
+#import os
 
 app = Flask(__name__)
 
@@ -19,4 +19,4 @@ def git_update():
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!3333</p>"
+    return "<p>Hello, World!4444</p>"
