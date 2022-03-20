@@ -1,4 +1,9 @@
-from flask import Flask
+from flask import Flask, request, render_template, jsonify
+from flask.wrappers import Response
+from py.prime import makePrime
+from galton import galtonboard
+import git # GitPython library
+import os
 
 app = Flask(__name__)
 
